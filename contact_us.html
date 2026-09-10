@@ -1,0 +1,337 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+  <meta charset="UTF-8">
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Travel Explorer - Contact Us</title>
+
+
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: Arial, Helvetica, sans-serif;
+
+      color: white;
+
+      min-height: 100vh;
+
+      background:
+        linear-gradient(rgba(0, 40, 50, 0.75),
+          rgba(0, 40, 50, 0.7)),
+        url("https://images.unsplash.com/photo-1500530855697-b586d89ba3ee?auto=format&fit=crop&w=1920&q=80");
+
+      background-size: cover;
+      background-position: center;
+    }
+
+
+    nav {
+      min-height: 75px;
+
+      background-color: #12343b;
+
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+
+      padding: 12px 40px;
+    }
+
+
+    .brand {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+
+      font-size: 24px;
+      font-weight: bold;
+    }
+
+
+    .brand-logo {
+      font-size: 30px;
+    }
+
+
+    .nav-links {
+      display: flex;
+      gap: 30px;
+    }
+
+
+    .nav-links a {
+      color: white;
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+
+    .nav-links a:hover {
+      color: #2dd4bf;
+    }
+
+
+    .contact-container {
+
+      min-height: calc(100vh - 75px);
+
+      display: grid;
+
+      grid-template-columns:
+        1fr 1fr;
+
+      align-items: center;
+
+      gap: 70px;
+
+      padding: 70px 10%;
+    }
+
+
+    .contact-heading h1 {
+
+      font-size: 65px;
+
+      text-transform: uppercase;
+
+      margin-bottom: 20px;
+    }
+
+
+    .contact-heading p {
+
+      font-size: 18px;
+
+      color: #eeeeee;
+    }
+
+
+    .contact-form {
+
+      background-color: rgba(0, 0, 0, 0.45);
+
+      padding: 30px;
+
+      border-radius: 10px;
+    }
+
+
+    .form-group {
+
+      margin-bottom: 20px;
+    }
+
+
+    .form-group label {
+
+      display: block;
+
+      margin-bottom: 8px;
+
+      font-weight: bold;
+    }
+
+
+    .form-group input,
+    .form-group textarea {
+
+      width: 100%;
+
+      padding: 13px;
+
+      border: 1px solid #aaaaaa;
+
+      border-radius: 5px;
+
+      background-color: rgba(255, 255, 255, 0.08);
+
+      color: white;
+
+      font-size: 15px;
+
+      outline: none;
+    }
+
+
+    .form-group input::placeholder,
+    .form-group textarea::placeholder {
+
+      color: #dddddd;
+    }
+
+
+    .form-group textarea {
+
+      height: 160px;
+
+      resize: vertical;
+    }
+
+
+    .submit-button {
+
+      width: 100%;
+
+      padding: 14px;
+
+      border: none;
+
+      border-radius: 5px;
+
+      background-color: #0d9488;
+
+      color: white;
+
+      font-size: 16px;
+
+      font-weight: bold;
+
+      cursor: pointer;
+    }
+
+
+    .submit-button:hover {
+
+      background-color: #0f766e;
+    }
+
+
+    @media(max-width: 800px) {
+
+      nav {
+
+        flex-direction: column;
+
+        gap: 15px;
+      }
+
+
+      .contact-container {
+
+        grid-template-columns: 1fr;
+
+        gap: 30px;
+      }
+
+
+      .contact-heading h1 {
+
+        font-size: 45px;
+      }
+
+    }
+  </style>
+
+</head>
+
+
+<body>
+
+
+  <!-- Navbar WITHOUT search bar -->
+
+  <nav>
+
+    <div class="brand">
+
+      <span class="brand-logo">
+        ✈
+      </span>
+
+      Travel Explorer
+
+    </div>
+
+
+    <div class="nav-links">
+
+      <a href="travel_recommendation.html">
+        Home
+      </a>
+
+      <a href="about_us.html">
+        About Us
+      </a>
+
+      <a href="contact_us.html">
+        Contact Us
+      </a>
+
+    </div>
+
+  </nav>
+
+
+  <main class="contact-container">
+
+
+    <section class="contact-heading">
+
+      <h1>
+        Contact Us
+      </h1>
+
+      <p>
+        Get in touch with our travel team.
+      </p>
+
+    </section>
+
+
+    <form class="contact-form">
+
+
+      <div class="form-group">
+
+        <label for="name">
+          Name
+        </label>
+
+        <input type="text" id="name" name="name" placeholder="Enter your name" required>
+
+      </div>
+
+
+      <div class="form-group">
+
+        <label for="email">
+          Email
+        </label>
+
+        <input type="email" id="email" name="email" placeholder="Enter your email" required>
+
+      </div>
+
+
+      <div class="form-group">
+
+        <label for="message">
+          Message
+        </label>
+
+        <textarea id="message" name="message" placeholder="Enter your message" required></textarea>
+
+      </div>
+
+
+      <button type="submit" class="submit-button">
+        Submit
+      </button>
+
+
+    </form>
+
+  </main>
+
+</body>
+
+</html>

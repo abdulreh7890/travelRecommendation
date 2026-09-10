@@ -1,0 +1,316 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+  <meta charset="UTF-8">
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Travel Explorer - About Us</title>
+
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: Arial, Helvetica, sans-serif;
+      color: white;
+
+      min-height: 100vh;
+
+      background:
+        linear-gradient(rgba(0, 40, 50, 0.75),
+          rgba(0, 40, 50, 0.7)),
+        url("https://images.unsplash.com/photo-1469474968028-56623f02e42e?auto=format&fit=crop&w=1920&q=80");
+
+      background-size: cover;
+      background-position: center;
+      background-attachment: fixed;
+    }
+
+    nav {
+      width: 100%;
+      min-height: 75px;
+
+      background-color: #12343b;
+
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+
+      padding: 12px 40px;
+    }
+
+    .brand {
+      font-size: 24px;
+      font-weight: bold;
+
+      display: flex;
+      gap: 10px;
+      align-items: center;
+    }
+
+    .brand-logo {
+      font-size: 30px;
+    }
+
+    .nav-links {
+      display: flex;
+      gap: 30px;
+    }
+
+    .nav-links a {
+      text-decoration: none;
+      color: white;
+      font-weight: bold;
+    }
+
+    .nav-links a:hover {
+      color: #2dd4bf;
+    }
+
+    .about-container {
+      padding: 70px 8%;
+    }
+
+    .about-container h1 {
+      font-size: 58px;
+      text-transform: uppercase;
+      margin-bottom: 30px;
+    }
+
+    .company-info {
+      background-color: rgba(0, 0, 0, 0.45);
+      border-radius: 10px;
+
+      padding: 30px;
+
+      font-size: 17px;
+      line-height: 1.8;
+
+      margin-bottom: 50px;
+    }
+
+    .team-section {
+      display: grid;
+
+      grid-template-columns:
+        250px repeat(3, 1fr);
+
+      gap: 20px;
+
+      align-items: stretch;
+    }
+
+    .team-title {
+      display: flex;
+      align-items: center;
+
+      font-size: 40px;
+      font-weight: bold;
+    }
+
+    .team-member {
+      background-color: rgba(0, 0, 0, 0.5);
+
+      border-radius: 10px;
+
+      padding: 25px;
+
+      text-align: center;
+    }
+
+    .member-icon {
+      font-size: 45px;
+      margin-bottom: 15px;
+    }
+
+    .team-member h2 {
+      margin-bottom: 10px;
+      font-size: 21px;
+    }
+
+    .team-member p {
+      color: #dddddd;
+      font-size: 14px;
+      margin-bottom: 15px;
+    }
+
+    .role {
+      display: inline-block;
+
+      background-color: #0d9488;
+
+      padding: 10px 18px;
+
+      border-radius: 5px;
+
+      font-weight: bold;
+    }
+
+    @media(max-width: 900px) {
+
+      .team-section {
+        grid-template-columns: 1fr;
+      }
+
+      nav {
+        flex-direction: column;
+        gap: 15px;
+      }
+
+    }
+  </style>
+
+</head>
+
+
+<body>
+
+  <!-- Navbar without search controls -->
+
+  <nav>
+
+    <div class="brand">
+
+      <span class="brand-logo">
+        ✈
+      </span>
+
+      Travel Explorer
+
+    </div>
+
+
+    <div class="nav-links">
+
+      <a href="travel_recommendation.html">
+        Home
+      </a>
+
+      <a href="about_us.html">
+        About Us
+      </a>
+
+      <a href="contact_us.html">
+        Contact Us
+      </a>
+
+    </div>
+
+  </nav>
+
+
+  <main class="about-container">
+
+    <h1>
+      About Us
+    </h1>
+
+
+    <section class="company-info">
+
+      <p>
+        Welcome to Travel Explorer! We are passionate about helping
+        travelers discover extraordinary destinations around the
+        world. Our goal is to make travel planning easier by providing
+        useful recommendations for beautiful beaches, historic
+        temples, exciting cities, and culturally rich destinations.
+      </p>
+
+      <br>
+
+      <p>
+        At Travel Explorer, we believe that traveling is more than
+        simply visiting new places. It is an opportunity to experience
+        different cultures, meet new people, create lasting memories,
+        and discover the beauty our world has to offer.
+      </p>
+
+    </section>
+
+
+    <section class="team-section">
+
+      <div class="team-title">
+        Our<br>
+        Team
+      </div>
+
+
+      <div class="team-member">
+
+        <div class="member-icon">
+          👤
+        </div>
+
+        <h2>
+          Abdul Rehman
+        </h2>
+
+        <p>
+          Responsible for leading the company and defining
+          its vision.
+        </p>
+
+        <span class="role">
+          CEO
+        </span>
+
+      </div>
+
+
+      <div class="team-member">
+
+        <div class="member-icon">
+          👤
+        </div>
+
+        <h2>
+          Sarah Ahmed
+        </h2>
+
+        <p>
+          Responsible for travel research and destination
+          recommendations.
+        </p>
+
+        <span class="role">
+          Travel Specialist
+        </span>
+
+      </div>
+
+
+      <div class="team-member">
+
+        <div class="member-icon">
+          👤
+        </div>
+
+        <h2>
+          Ali Khan
+        </h2>
+
+        <p>
+          Responsible for customer assistance and traveler
+          satisfaction.
+        </p>
+
+        <span class="role">
+          Customer Support
+        </span>
+
+      </div>
+
+    </section>
+
+  </main>
+
+</body>
+
+</html>
